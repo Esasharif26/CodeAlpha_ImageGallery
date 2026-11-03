@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the One Piece anime image gallery.">
+    <title>Grand Line | One Piece Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">☠</span>
+            GRAND LINE
+        </a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+        </div>
+
+        <a href="#gallery" class="nav-button">Explore Gallery ↗</a>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO THE WORLD OF PIRATES</p>
+
+            <h1>
+                THE GRAND<br>
+                <span>LINE.</span>
+            </h1>
+
+            <p class="hero-description">
+                Every adventure tells a story.
+                Explore the legendary world of One Piece
+                through a collection of unforgettable moments.
+            </p>
+
+            <a href="#gallery" class="primary-button">
+                Explore Collection <span>→</span>
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://wallpapercg.com/media/ts_2x/33103.webp"
+                alt="One Piece Straw Hat Pirates"
+            >
+            <div class="image-label">THE STRAW HAT CREW</div>
+        </div>
+
+        <div class="hero-bottom">
+            <span>01 / THE ADVENTURE BEGINS</span>
+            <span>EST. 1997 · ONE PIECE</span>
+        </div>
+    </header>
+
+    <!-- Gallery -->
+    <main class="gallery-section" id="gallery">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">COLLECT MOMENTS</p>
+                <h2>THE <span>GALLERY</span></h2>
+                <p class="section-description">
+                    Explore the legends of the Grand Line.
+                </p>
+            </div>
+
+            <div class="image-count">
+                <span id="imageCount">11</span>
+                <small>IMAGES</small>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="crew">Straw Hats</button>
+                <button class="filter-btn" data-filter="luffy">Luffy</button>
+                <button class="filter-btn" data-filter="zoro">Zoro</button>
+                <button class="filter-btn" data-filter="others">Others</button>
+            </div>
+
+            <span class="gallery-caption">CLICK AN IMAGE TO EXPLORE ↗</span>
+        </div>
+
+        <!-- Images generated using JavaScript -->
+        <div class="gallery-grid" id="galleryGrid"></div>
+
+        <div class="empty-message" id="emptyMessage">
+            No images found in this category.
+        </div>
+
+    </main>
+
+    <!-- About -->
+    <section class="about-section" id="about">
+        <p class="eyebrow">ABOUT THE COLLECTION</p>
+        <h2>ONE DREAM.<br><span>INFINITE ADVENTURES.</span></h2>
+
+        <p>
+            A small visual tribute to the legendary world of One Piece.
+            From the Straw Hat Pirates to the adventures across the Grand
+            Line, every image captures a moment worth remembering.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" class="logo">☠ GRAND LINE</a>
+        <p>Made with ❤️ by an anime fan.</p>
+        <p class="copyright">© 2026 GRAND LINE GALLERY · FAN PROJECT</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close-btn" id="closeBtn" aria-label="Close">×</button>
+
+        <button class="lightbox-arrow prev-btn" id="prevBtn" aria-label="Previous image">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+
+            <div class="lightbox-info">
+                <div>
+                    <h3 id="lightboxTitle"></h3>
+                    <p id="lightboxCategory"></p>
+                </div>
+
+                <span id="lightboxCounter"></span>
+            </div>
+        </div>
+
+        <button class="lightbox-arrow next-btn" id="nextBtn" aria-label="Next image">
+            &#10095;
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
